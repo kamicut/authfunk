@@ -1,0 +1,14 @@
+{
+  "name": "authfunk",
+  "version": "0.1.0",
+  "description": "An auth function",
+  "author": "Marc Farra <marcfarra@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jsonwebtoken": "^8.1.0",
+    "levelup": "^2.0.0",
+    "meow": "^3.7.0",
+    "require-env": "^0.2.1",
+    "s3leveldown": "^1.0.0"
+  }
+}
