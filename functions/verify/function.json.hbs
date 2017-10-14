@@ -1,0 +1,10 @@
+{
+  "runtime": "nodejs6.10",
+  "environment": {
+    "S3_BUCKET": "{{AUTHFUNK_BUCKET}}",
+    "JWT_SECRET": "{{AUTHFUNK_SECRET}}"
+  },
+  "hooks": {
+    "build": "npm install"
+  }
+}

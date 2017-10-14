@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 const store = require('../functions/auth/store');
-var crypto = require('crypto')
-var shasum = require('shasum')
+const crypto = require('crypto')
+const shasum = require('shasum')
 
 const cli = require('meow')(`
 Usage

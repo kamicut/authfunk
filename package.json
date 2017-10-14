@@ -4,11 +4,20 @@
   "description": "An auth function",
   "author": "Marc Farra <marcfarra@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "init": "apex init",
+    "deploy": "npm run interp && apex deploy",
+    "interp": "interp < functions/verify/function.json.hbs > functions/verify/function.json"
+  },
   "dependencies": {
-    "jsonwebtoken": "^8.1.0",
+    "interp": "^0.1.1",
     "levelup": "^2.0.0",
     "meow": "^3.7.0",
     "require-env": "^0.2.1",
-    "s3leveldown": "^1.0.0"
+    "s3leveldown": "^1.0.0",
+    "shasum": "^1.0.2"
+  },
+  "devDependencies": {
+    "apex": "^0.0.1-beta2"
   }
 }
