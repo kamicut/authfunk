@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-const store = require('../functions/auth/store');
+const store = require('../functions/verify/store');
 const crypto = require('crypto')
 const shasum = require('shasum')
 
@@ -40,7 +40,7 @@ function exit(err) {
 // Create a user and assign a role
 create(user, password, err => {
   if (err) exit(err);
-  store.roles.put(user, role, err => {
+  store.roles.put(user, JSON.stringify(role), err => {
     if (err) exit(err);
   })
 })

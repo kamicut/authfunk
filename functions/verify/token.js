@@ -9,8 +9,10 @@ module.exports = (username, cb) => {
     else {
       const token = jwt.sign({
         username: username,
-        role: role
-      }, JWT_SECRET);
+        role: JSON.parse(role)
+      }, JWT_SECRET, {
+        expiresIn: "10h"
+      });
       cb(null, token);
     }
   })
